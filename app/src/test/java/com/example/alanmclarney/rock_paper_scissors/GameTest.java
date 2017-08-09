@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.assertNotNull;
 
 
 public class GameTest {
@@ -18,6 +19,10 @@ public class GameTest {
     @Test
     public void testGetInput(){
         assertEquals("Rock", game.getSelect());
+    }
+    @Test
+    public void setUpAnswersHasAnswers(){
+        assertEquals(3, game.getLength());
     }
 
 
